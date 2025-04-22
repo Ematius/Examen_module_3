@@ -11,11 +11,12 @@ describe('Give createFormAdd', () => {
         expect(form).toBeInstanceOf(HTMLFormElement);
     });
     test('When use submit', () => {
+        //Act
         const button = screen.getByRole('button', { name: 'Crear' });
+        button.click();
+        //Assert
         expect(button).toBeInTheDocument();
         expect(button).toHaveAttribute('type', 'submit');
-        button.click();
+        
     });
-
-
 });
