@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from 'express';
 import { vi, Mock } from 'vitest';
 
 
-// vi.mock('./dto/products.dto');
+
 
 const mockRepo = {
     read: vi.fn().mockResolvedValueOnce([]),
@@ -25,8 +25,6 @@ const next = vi.fn() as NextFunction;
 const error = new Error('Error');
 
 describe('Given ProductsController', () => {
-    // ProductCreateDTO.parse = vi.fn();
-    // ProductCreateDTO.partial = vi.fn().mockReturnValue(ProductCreateDTO.parse);
 
     const productsRepo = new ProductsController(mockRepo);
     test('Then should be defined', () => {
