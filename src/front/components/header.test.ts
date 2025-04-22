@@ -12,11 +12,9 @@ describe('Given createHeader', () =>{
     describe('When createHeader is called', () => {
         test('Then title "Products" is in de document ', () => {
             const element = screen.getByRole('heading', {
-                name: /Products/i,
+                name: /Productos/i,
             });
             expect(element).toBeInTheDocument();
         });
-        
-    });
-    
+    }); 
 })
