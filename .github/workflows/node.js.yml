@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "feature/examen" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20x]
+        node-version: [19x]
 
     steps:
     - uses: actions/checkout@v4
