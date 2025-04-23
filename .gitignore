@@ -35,7 +35,7 @@ coverage
 build/Release
 dist
 
-# Dependency directories
+# Dependency directori
 node_modules
 jspm_packages/
 
