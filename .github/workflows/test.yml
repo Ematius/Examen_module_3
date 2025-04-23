@@ -22,7 +22,7 @@ jobs:
                   node-version: '23.11'
 
             # Install dependencies
-            - run: npm install
+            - run: npm ci
 
             # Run linter (optional, if you have ESLint configured)
             - name: Run Linter
