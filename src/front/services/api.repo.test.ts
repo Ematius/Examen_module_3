@@ -1,4 +1,4 @@
-import type { Product } from '../types/product';
+//import type { Product } from '../types/product';
 import { ApiRepo } from './api.repo';
 import { vi } from 'vitest';
 
@@ -9,7 +9,7 @@ const fetchMock = vi.spyOn(global, 'fetch').mockResolvedValue({
     json: () => Promise.resolve(mockData),
 } as Response);
 
-describe.only('Given ApiRepo', () => {
+describe('Given ApiRepo', () => {
     //Arrange
     const apiRepo = new ApiRepo();
 
